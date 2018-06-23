@@ -1,0 +1,380 @@
+﻿/*
+	Сброс таблицы стилей, взято из:
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Настройка основных блоков*/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+header, nav, section, main, article, aside, footer 
+{
+	display: block;
+}
+
+
+body	/* в Body задаем настройки по умолчанию для: фона страницы, шрифт и его размер, стиль и цвет */
+{
+   background-color: #0D3262;	/*цвет фона*/
+   font-family: 'Roboto Condensed',sans-serif;	/*задаем шрифт по умолчанию Raleway*/
+   font-size: medium;		/* задаем базовый шрифт medium, это около 14 px */
+   font-weight: normal;		/* толщина нормальная*/
+   color:#1b1b1b;	/* цвет темно-серый или черный #000 */
+}
+
+h1,h2,h3,h4 	/*для всех заголовков задаем второй шрифт - Open Sans*/
+{
+	font-family: 'Open Sans',sans-serif;
+}
+
+h1
+{
+   font-size:1.8em;
+}
+h2
+{
+   font-size:1.6em;
+}
+h3
+{
+   font-size:1.4em;
+}
+h4
+{
+   font-size:1.2em;
+}
+a
+{
+   color: #5A99DC;
+   text-decoration: none;
+}
+a:hover
+{
+   text-decoration: underline;
+}
+
+/*Основной блок на всю ширину*/
+#wrapper
+{
+   /*max-width: 1170px;*/
+   margin: 0 auto;
+   background-color:#fff;	/*цвет фона*/
+}
+
+/* шапка --------------------------*/
+
+#hat
+{
+    background-color:#0D3262;
+    padding: 2em;
+    color: #fff;
+}
+#hat #user_login li
+{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.5em;
+}
+#hat #user_login form
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+#hat #user_login form #logout
+{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#hat a
+{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+#hat a:hover
+{
+    opacity: 0.7;
+}
+
+aside
+{
+    /*background-color:#0D9999;*/
+    background-color:#f9f9f9;
+    padding: 2em;
+    /*color:#fff;*/
+    color:#000;
+    /*border-right: 1px #e0e0e0 solid;*/
+}
+aside h2
+{
+    color:#000;
+    margin-left: 0.7em;
+}
+aside ul
+{
+    margin-top: 1em;
+}
+aside ul li
+{
+    line-height: 2.5;
+}
+aside ul li i
+{
+    color: #5A99DC;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+aside ul li a
+{
+    /*color:#fff;*/
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+aside ul li a:hover
+{
+   /* color:#fff;*/
+}
+aside ul li a.active_admin_menu
+{
+    color: #d9534f;
+    color: #000;
+}
+#workarea
+{
+    background-color:#fff;
+    padding: 2em;
+}
+#projects-table th
+{
+    color: #fff;
+    background-color: #9d9d9d;
+    text-align: center;
+    vertical-align: middle;
+}
+#projects-table td
+{
+    padding: 0.5em;
+    vertical-align: middle;
+    text-align: center;
+}
+#projects-table img
+{
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+#workarea .bg-warning
+{
+    padding: 1em;
+    font-size: 0.9em;
+}
+#workarea .bg-warning i
+{
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+.tpl-list-box
+{
+    padding: 2em;
+    border: 1px #e7e7e7 solid;
+    text-align: center;
+}
+.tpl-list-box:hover
+{
+    background-color: #f9f9f9;
+}
+.tpl-list-box .btn
+{
+    margin: 0.1em 0.3em;
+}
+
+/* Формы --------------------------*/
+
+form
+{
+    border: 1px #e9e9e9 solid;
+    padding: 2em;
+    /*text-align: center;*/
+    margin: 0 auto;
+}
+form fieldset
+{
+    border: 1px #f0f0f0 solid;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+}
+form legend
+{
+    margin-bottom: 0.5em;
+    padding: 0.2em;
+}
+form label
+{
+    margin-bottom: 0.5em;
+}
+form .help-block
+{
+    font-size: 0.8em;
+}
+form strong
+{
+    font-weight: 600;
+    color: #999;
+}
+form textarea::-webkit-input-placeholder {font-size: 1.3em;}
+form textarea::-moz-placeholder {font-size: 1.3em;}/* Firefox 19+ */
+form textarea:-moz-placeholder {font-size: 1.3em;}/* Firefox 18- */
+form textarea:-ms-input-placeholder {font-size: 1.3em;}
+
+
+form #logo-select-file
+{
+    padding: 0.5em; 
+    width: 100%;
+}
+form #select-template-area
+{
+    padding: 0.5em;
+}
+
+#user-del-form  /* форма удалить пользователя в списке пользователе  */
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Фильтр на странице шаблонов ---------------------- */
+#templates-filter
+{
+    margin: 1em 0;
+}
+#templates-filter li
+{
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px #e7e7e7 solid;
+}
+#templates-filter li a
+{
+    text-decoration: underline;
+}
+
+/* Подвал ---------------------- */
+footer
+{
+    background-color:#0D3262;
+    padding: 1em;
+    color: #fff;
+}
+
+
+#copyright
+{
+    text-align: center;
+    padding: 2em;
+    border-bottom: 0px #fff dotted;
+    font-size: 0.8em;
+}
+
+/*Кнопка Наверх*/
+#toTop 
+{
+	width:2.5em;
+	/*background-color: rgba(61,183,239,0.7);
+	background-color: #FFCB08;*/
+	background-color: rgba(255,203,8,0.8);
+	text-align:center;
+	padding:0.65em 0.2em;
+	position:fixed;
+	bottom:0.7em;
+	right:1em;
+	cursor:pointer;
+	display:none;
+	/*color:#fff;*/
+	color: #0D3262;	
+	font-size:1.5em;
+
+	
+	-webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+
+/* media */
+@media screen and (max-width:1400px) 	/* для ноутбуков и малых мониторов */
+{
+    
+}
+
+@media screen and (max-width:1170px) 	/* для планшетов */
+{
+	
+}
+@media screen and (max-width:768px) 	/* для смартфонов */
+{
+	body	
+	{
+	   font-size: small;
+	}
+	
+}

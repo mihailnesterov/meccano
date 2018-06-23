@@ -1,0 +1,8 @@
+# запрещаем доступ ко всем файлам
+<Files *>
+    order allow,deny
+    deny from all
+</Files>
+
+# запрещаем листинг директории
+Options All -Indexes
